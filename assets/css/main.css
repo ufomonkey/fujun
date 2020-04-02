@@ -1,0 +1,396 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #333;
+  font-size: 18px;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, SimSun, sans-serif !important;
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+p,ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5{
+  margin: 0;
+}
+.el-row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.main{
+  /* margin: auto; */
+  width: 100%;
+  min-width: 1024px;
+}
+.main>.container{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.main>.container.move{
+  background-color: #FFF;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+}
+.header{
+  width: 1024px;
+  margin: auto !important;
+  z-index: 1;
+}
+.header,.header>div{
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+}
+.web-logo{
+  height: 45px;
+  vertical-align: middle;
+}
+.header .h-menu{
+  float: right;
+  display: flex;
+}
+.h-menu>li{
+  padding: 0 10px;
+}
+.h-menu>li>a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.main>.container.move .h-menu>li>a{
+  color: #333;
+}
+.h-menu>li>a:hover{
+  color: #dd4f05 !important;
+}
+
+.footer{
+  background-color:#414B56;
+  padding: 20px 10px;
+  color: #FFF;
+}
+.footer>div{
+  margin-bottom: 40px;
+}
+.footer>div:last-child{
+  margin: 0;
+}
+.footer-logo{
+  text-align: center;
+}
+.footer-logo>img{
+  height: 60px;
+}
+.footer-title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer-title:hover{
+  color: #dd4f05;
+}
+.footer-item{
+  font-size: 14px;
+  margin-top: 20px;
+}
+.footer-item>a{
+  display: table;
+  cursor: pointer;
+  color: #FFF;
+}
+.footer-item>a.highlight:hover{
+  color: #dd4f05;
+}
+.widget{
+  overflow: hidden;
+}
+.widget>.widget-lable{
+  float: left;
+  width: 42px;
+}
+.copyright{
+  text-align: center;
+  font-size: 14px;
+}
+
+/* bease end */
+
+.banner{
+  height: 400px;
+  position: relative;
+}
+.banner>.text{
+  font-size: 60px;
+  color: #FFF;
+  font-weight: lighter;
+  position: absolute;
+  top: 25%;
+  right: 23%;
+}
+.banner>.centre{
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 0.08em 0.08em 0.1em #DD4F05;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner>.text>.el-button{
+  cursor: pointer;
+  position: absolute;
+  top: 120%;
+  right: 76%;
+  border: 1px solid #E6A23C;
+  background-color: #DD4F05;
+  color: #FFF;
+}
+/* 模仿a标签样式 */
+.link{
+  color: #1896CD;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+.background{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.el-button--primary{
+  background-color: #1896CD;
+  border-color: #1896CD;
+}
+
+.el-button-green{
+  background-color: #81AB6E;
+  color: #FFF;
+}
+.el-button-green:hover,.el-button-green:focus{
+  color: #FFF;
+  background-color: #9aca85;
+}
+
+.el-button-DD4F05{
+  border: 1px solid #DD4F05;
+  background-color: #DD4F05;
+  color: #FFF;
+}
+.el-button-DD4F05:hover,.el-button-DD4F05:focus{
+  border: 1px solid rgb(228, 114, 53);
+  color: #FFF;
+  background-color: rgb(228, 114, 53);
+}
+
+/* 每一块的公共样式 */
+[class^=content-]{
+  padding: 60px 0;
+}
+[class^=content-]>.title,
+[class^=content-]>.slogan{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #FB753E;
+  margin-bottom: 45px;
+}
+[class^=content-]>.title.left{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+/* [class^=content-]>.title{
+  font-size: 32px;
+} */
+[class^=content-]>.slogan{
+  font-size: 40px;
+  font-weight: lighter;
+}
+[class^=content-]>.container{
+  line-height: 150%;
+  width: 70%;
+  margin: auto;
+}
+[class^=content-]>.container>p{
+  margin-bottom: 30px;
+}
+[class^=content-]>.container>p:last-child{
+  /* margin-bottom: 0; */
+}
+
+/* 图片详情 */
+.background-fafafc{
+  background-color: #fafafc;
+}
+.content-10{
+  text-align: center;
+  padding: 0;
+}
+.content-10>.img-info{
+  max-width: 1280px;
+}
+
+/* 文本1 */
+.describe>.text-1{
+  color: #5D5D5D;
+}
+.describe>.text-1>p,
+.describe>.text-1>div{
+  margin-bottom: 30px;
+}
+.describe>.text-1>p:last-child{
+  margin-bottom: 0;
+}
+.describe>hr{
+  margin: 35px 0;
+  border-color: #FBA275;
+  border-style: solid;
+}
+/* 文本2 */
+
+
+.ul-style-1{
+  list-style: disc;
+  padding-left: 25px;
+  color: #FF6A24;
+  font-size: 20px;
+  font-weight: bold;
+}
+.ul-style-1>li{
+  margin-bottom: 30px;
+}
+.ul-style-2>li>span,
+.ul-style-1>li>span{
+  color: #333;
+  font-size: 18px;
+}
+.ul-style-2{
+  list-style: disc;
+  padding-left: 25px;
+  color: #FF6A24;
+  font-size: 20px;
+}
+.ul-style-2 span.lable{
+  font-weight: bold;
+}
+.ul-style-2 li,
+.ul-style-3 li{
+  margin-bottom: 30px;
+}
+
+.ul-style-3 .lable::before{
+  background-color: #FBA275;
+  content: ' ';
+  font-size: 100px;
+  width: 5px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.ul-style-3 .text{
+  padding-left: 15px;
+}
+.content-6 .container{
+  text-align: center;
+}
+.content-6 .container>img{
+  max-width: 1000px;
+}
+.content-8{
+  margin-top: -5px;
+}
+.content-8 .list{
+  margin-top: 50px;
+}
+.content-8 .list>p{
+  margin-bottom: 5px;
+}
+.content-8 .list>p>span{
+  font-weight: bold;
+}
+
+/* 播放视频窗口 */
+.video-dialog .el-dialog__body{
+  padding: 0;
+}
+.video-dialog .el-dialog__body video{
+  width: 100%;
+  height: 500px;
+}
+
+.content-9{
+  background-color: #fafafc;
+}
+.content-9 .container>.item,
+.content-9 .container>.item>.addr{
+  margin-bottom: 30px;
+}
+.content-9 .container>.item>.addr:last-child{
+  margin-bottom: 0;
+}
+
+.el-dialog{
+  width: 750px;
+}
+
+.content-menu .item{
+  margin-bottom: 20px;
+}
+.content-menu .item>.max-title{
+  color: #DD4F05;
+  font-size: 36px;
+  line-height: initial;
+  background-color: #F9FAFC;
+  padding: 20px 25px;
+}
+.content-menu .item>.min-title{
+  padding: 20px 25px;
+  border-bottom: 1px solid #FCFCFC;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content-menu .item>.min-title:hover{
+  color: #dd4f05;
+}
+.content-menu .item>.min-title:last-child{
+  border-bottom: none;
+}
+
+.common-background{
+  background-color: #F9FAFC;
+}
+
+.common-background-2{
+  background-color: #FFFFFF;
+}
+
+.content-11>.container>h3{
+  text-align: left;
+}
+.content-11>.container{
+  text-align: center;
+  max-width: 1000px;
+}
+
+.anchor-point{
+  margin-top: -90px;
+  float: left;
+}

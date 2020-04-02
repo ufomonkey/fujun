@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>福君基因 - 扩展性携带者筛查</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- elementui -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.13.0/lib/theme-chalk/index.css" />
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui@2.13.0/lib/index.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/joinus.css" />
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div id="app" class="main">
+    <!-- 头部 -->
+    <div class="container">
+        <el-row type="flex" class="header">
+            <el-col :span="6">
+                <a href="/index.html"><img class="web-logo" src="./assets/img/fulgent_logo_02.png" /></a>
+            </el-col>
+            <el-col :span="18">
+                <ul class="h-menu">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./about.html">关于福君</a></li>
+                    <li><a href="./html/clinical/carrier.html">福孕安™</a></li>
+                    <li><a href="./html/clinical/index.html">临床检测</a></li>
+                    <li><a href="./html/research/index.html">科研服务</a></li>
+                    <li><a href="./about.html#anchor">联系我们</a></li>
+                    <li><a href="./joinus.html">加入我们</a></li>
+                </ul>
+            </el-col>
+        </el-row>
+    </div>
+    <!-- 内容 -->
+    <div class="content">
+        <div class="banner background" style="background-image: url(./assets/img/701.jpg);">
+            <div class="centre">
+                <p>加入福君</p>
+            </div>
+        </div>
+
+        <div class="content-1 common-background" style="padding-bottom:0px;">
+            <h3 class="title">营销管理中心</h3>
+            <div class="container">
+                <div class="work">
+                    <div class="post">
+                        <p class="title">区域经理</p>
+                        <p class="describe">工作地点：陕西、河南</p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 在公司政策和程序指引下制定本区域内的销售计划，负责区域内的高通量测序临床客户开拓、项目跟踪及客户维护等工作；<br/>
+                            · 完成负责区域内的销售及回款任务；<br/>
+                            · 定期拜访客户，及时了解、收集并反馈市场信息；<br/>
+                            · 负责区域内客户信息的收集、整理工作，并汇报给直属上级<br/>
+                            · 能及时与客户保持项目沟通，处理项目进行过程中出现的问题，维护好客户关系。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 生命科学，医学及生物学相关专业硕士以上学历；<br/>
+                            · 医院临床测序业务开发2-3年工作经验，；<br/>
+                            · 善于与人沟通，有较强的客户服务意识和团队合作精神；<br/>
+                            · 性格活泼开朗，思维开阔，有创造性和主动性，能承受较大的工作压力。<br/>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="post">
+                        <p class="title">销售代表</p>
+                        <p class="describe">工作地点：北京、石家庄、保定、上海、浙江、江苏、广东、福州、厦门 </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 在公司政策和程序指引下制定本区域内的销售计划，负责区域内的高通量测序临床客户开拓、项目跟踪及客户维护等工作；<br/>
+                            · 完成负责区域内的销售及回款任务；<br/>
+                            · 定期拜访客户，及时了解、收集并反馈市场信息；<br/>
+                            · 负责区域内客户信息的收集、整理工作，并汇报给直属上级；<br/>
+                            · 能及时与客户保持项目沟通，处理项目进行过程中出现的问题，维护好客户关系。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 生物、分子、医学等本科以上学历；<br/>
+                            · 医院临床测序业务开发经验优先考虑；<br/>
+                            · 善于与人沟通，有较强的客户服务意识和团队合作精神；<br/>
+                            · 性格活泼开朗，思维开阔，有创造性和主动性，能承受较大的工作压力。<br/>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="post">
+                        <p class="title">销售助理</p>
+                        <p class="describe">工作地点：福州 </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 汇总销售数据，进行销售报表分析，为市场人员及部门经理提供数据支持；<br/>
+                            · 负责营销部学术资料的信息整理、资料版面设计的沟通协调工作；<br/>
+                            · 记录针对营销部的内部投诉和需求，及时反馈给部们经理及主管进行处理；<br/>
+                            · 负责相关的对外沟通事务；<br/>
+                            · 协助销售完成客户样本的采集和整理工作；<br/>
+                            · 完成上级领导交办的其他工作。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 管理、生命科学、医学、护理学等相关专业大专以上学历；<br/>
+                            · 有良好的沟通协调和数据处理能力；<br/>
+                            · 善于与人沟通，有较强的客户服务意识和团队合作精神。<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-2 common-background-2">
+            <h3 class="title">技术支持及运营中心</h3>
+            <div class="container">
+                <div class="work">
+                    <div class="post">
+                        <p class="title">技术支持 </p>
+                        <p class="describe">工作地点：上海、福州</p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 培训工作：对销售进行公司产品和优势的培训；<br/>
+                            · 售前技术支持：对接客户，解答客户提出的与NGS项目相关的技术问题，确定技术方案；<br/>
+                            · 售后技术支持：回答客户提出的与项目结果有关的技术问题，协调后端生产人员进行售后增值服务；<br/>
+                            · 市场技术支持：主持市场推广相关的学术讲座，参与各类宣传材料撰写。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 分析生物学，遗传学，生物信息学等相关专业，硕士及以上学历或具有一定的NGS科研服务相关工作经验者优先；<br/>
+                            · 熟练阅读国内外文献，有扎实的专业知识；<br/>
+                            · 有责任心，愿意在项目及工作中承担一定的职责；<br/>
+                            · 具有较强的语言表达能力，善于与人沟通，有较强的团队合作精神；<br/>
+                            · 性格活泼开朗，思维开阔，有创造性和主动性，能承受一定的工作压力；<br/>
+                            · 对产品相关的学术领域具备前瞻性视野。<br/>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="post">
+                        <p class="title">基因组学软件支持销售代表</p>
+                        <p class="describe">工作地点：上海</p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 支持公司在生物信息学、基因组学领域软件产品的销售以及售前售后工作；<br/>
+                            · 深入了解二代测序数据分析流程并能熟悉使用相关软件与数据库产品，特别是通路分析、突变与疾病关联分析，表达分析以及微生物基因组学分析；<br/>
+                            · 可快速熟悉公司产品，配合团队完成技术资料准备；负责潜在客户收集、联系；<br/>
+                            · 配合团队完成生物信息学软件的市场推广、销售工作；<br/>
+                            · 负责软件的售前技术介绍交流及售后培训。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 生物信息学、生物学、软件开发、统计学或相关专业本科以上学历，熟悉二代测序平台常用信息分析软件和数据库，有遗传、基因检测、基因组、转录组、宏基因组、表观遗传等分析经验者优先；<br/>
+                            · 学习能力强、责任心强、工作主动，具备良好的沟通能力和团队协作能力，能承受工作压力，愿意接受挑战，并乐于学习新知识和技能；<br/>
+                            · 具备良好的英语读写能力和工作交流能力；<br/>
+                            · 了解基于基因组学NGS整个分析流程并深入了解功能注释聚类或通路分析，用过IPA，Genenvestigator，CLC Bio，HGMD，IVA，Alamut，Sentieon等商业软件或者数据库更佳；<br/>
+                            · 了解二代测序与基因芯片分析流程、基因变异注释分析以及各类PCR流程中的引物设计。<br/>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="post">
+                        <p class="title">注册申报专员</p>
+                        <p class="describe">工作地点：福州 </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 负责组织实验室资质（ISO15189、CAP等）、产品资质（cFDA）、科研课题的申报工作；<br/>
+                            · 及时关注各级相关部委发布的项目申报文件，负责项目申报的信息收集与整理，撰写申报项目材料；<br/>
+                            · 主持申报项目的立项、申报、审批、验收等各环节相关工作。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 本科及以上学历，生物、医药等相关专业；熟悉项目申报流程，有项目申报工作经验者优先；<br/>
+                            · 具有一定的文字功底，能撰写注册申报所需的相关文件资料；<br/>
+                            · 拥有极强的计划能力，内外沟通、组织协调和解决现场突发问题的能力；<br/>
+                            · 工作中严谨、关注细节，能够以身作则感染并带领团队充满激情的开展工作。同时拥有不断学习的心态。<br/>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="post">
+                        <p class="title">生物信息工程师</p>
+                        <p class="describe">工作地点：福州 </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 项目执行：执行二代测序项目的数据分析；<br/>
+                            · 技术研发方向：开发科研以及精准医学生物信息分析流程和相关软件；<br/>
+                            · 科学发现方向：研究人类基因信息与人体疾病、生理功能的关系。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 本科及以上学历，生物信息学、生物技术、生物科学、生物工程、计算机、数学或统计等相关专业，有从事NGS数据分析相关经历的优先；<br/>
+                            · 对数据分析感兴趣，具备较强的学习能力。具备linux 系统操作、perl/python、C/C++、JAVA软件开发、matlab、JavaScript、CSS、HTML、mySQL或Oracle开发等相关经验者优先，但不做硬性要求；<br/>
+                            · 具备一定的基础数理统计知识，会使用R/matlab 等统计工具优先；<br/>
+                            · 有较强的英文阅读能力（文献和说明文档阅读），具备论文写作经验者优先。<br/>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="post">
+                        <p class="title">运营内勤</p>
+                        <p class="describe">工作地点：福州 </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 临床样本的接收、信息的录入；<br/>
+                            · 建立销售台账、应收账款的核对；<br/>
+                            · 负责完成医疗标书的制作、相关资料收集整理汇编、封标及参与投标、保证金支付、退回等工作；<br/>
+                            · 合同及档案管理；<br/>
+                            · 领导安排的其他工作。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 财务或统计学专业，大专以上学历；<br/>
+                            · 熟练运用Office办公软件；<br/>
+                            · 有相关工作经验。<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-3 common-background">
+            <h3 class="title">研发生产中心</h3>
+            <div class="container">
+                <div class="work">
+                    <div class="post">
+                        <p class="title">实验技术员</p>
+                        <p class="describe">工作地点：福州</p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 负责分子遗传学常规实验：PCR，质粒提取，DNA电泳等；<br/>
+                            · 负责分子遗传学检验项目的建立、方法学验证、SOP文件的编写等；<br/>
+                            · 对实验室仪器、设备进行日常维护和保养；<br/>
+                            · 协助主管管理实验室等；<br/>
+                            · 完成领导交代的其他工作。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 分子生物学相关专业，本科及以上学历；<br/>
+                            · 熟练掌握DNA/RNA提取、PCR、RT-PCR、qRT-PCR等基础分子生物学技能；熟悉二代测序建库、测序原理；<br/>
+                            · 具有一年以上二代测序建库经验者优先考虑；具有医学检验师资格证，或PCR上岗证者优先考虑；<br/>
+                            · 工作认真有上进心，愿意从事检验技术工作；<br/>
+                            · 有良好的团队精神和学习能力。<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-4 common-background-2">
+            <h3 class="title">医学服务中心</h3>
+            <div class="container">
+                <div class="work">
+                    <div class="post">
+                        <p class="title">医学服务专员</p>
+                        <p class="describe">工作地点：福州、上海</p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 根据二代测序及其它检测所得人类基因变异信息进行医学解读并出具分析报告；<br/>
+                            · 对市场部、销售部、临床医生提供解读技巧和医学知识的支持和培训；<br/>
+                            · 为产品研发、产品设计、解读系统等提供专业建议；<br/>
+                            · 整理病例和本地知识库，定期与临床医生交流；<br/>
+                            · 为客户提供报告相关的遗传咨询。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 具有临床医学、基础医学、生物学（微生物、遗传、分子生物）等相关专业，硕士及以上学历，有基因检测工作经验者优先；<br/>
+                            · 具有良好的英文文献检索和阅读能力；<br/>
+                            · 学习能力及责任心较强，善沟通；<br/>
+                            · 逻辑思维能力强，认真细心。<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-5 common-background">
+            <h3 class="title">产品中心</h3>
+            <div class="container">
+                <div class="work">
+                    <div class="post">
+                        <p class="title">产品经理</p>
+                        <p class="describe">工作地点：上海</p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位职责</p>
+                        <p class="describe">
+                            · 推进业务发展，协助产品上市，与销售紧密合作，进行产品的销售推广；<br/>
+                            · 组织策划学术会议，交流和推广产品；<br/>
+                            · 科室会组织及主讲，交流和推广产品；<br/>
+                            · 市场调研分析，改进产品。<br/>
+                        </p>
+                    </div>
+
+                    <div class="duty">
+                        <p class="title">岗位要求</p>
+                        <p class="describe">
+                            · 分子生物学、遗传学、医学、医学检验本科以上学历，有遗传检测相关工作经历，了解高通量测序和遗传学技术及行业前沿技术者优先；<br/>
+                            · 有学术会议组织、策划经验者者优先；<br/>
+                            · 有销售经历或科室会推广工作经历者优先；<br/>
+                            · 优秀的沟通表达能力及写作能力；英文读、写、说能力良好者优先；<br/>
+                            · 责任心强，团队协助能力强，执行力高，有良好的抗压能力及处理问题能力，能适应短期出差。<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-6">
+            <div class="container">
+                <div class="welfare">
+                    <span class="hook"><img width="20px;" height="20px;" src="./assets/svg/hook.svg"></span>
+                    <div style="display: inline-block;">
+                        <span class="title">假期多</span>
+                        <p class="describe">
+                            朝9晚5.5，周末双休，法定节假日、婚假、产检家、产假、陪产假、年假、妇女假
+                        </p>
+                    </div>
+                </div>
+                <div class="welfare">
+                    <span class="hook"><img width="20px;" height="20px;" src="./assets/svg/hook.svg"></span>
+                    <div style="display: inline-block;">
+                        <span class="title">福利待遇好</span>
+                        <p class="describe">
+                            五险一金、过节福利、生日津贴、结婚礼金、年度调薪、年终绩效奖励、不定期团队拓展
+                        </p>
+                    </div>
+                </div>
+
+                <div class="welfare">
+                    <span class="hook"><img width="20px;" height="20px;" src="./assets/svg/hook.svg"></span>
+                    <div style="display: inline-block;">
+                        <span class="title">完善的培训与晋升通道</span>
+                        <p class="describe">
+                            内部培训、外部培训、赴美培训、技术/管理双通道晋升制度
+                        </p>
+                    </div>
+                </div>
+                <div class="welfare">
+                    <span class="hook"><img width="20px;" height="20px;" src="./assets/svg/hook.svg"></span>
+                    <div style="display: inline-block;">
+                        <span class="title">年轻、活力的团队</span>
+                        <p class="describe">
+                            年轻的管理团队、轻松的工作氛围、开放的文化氛围
+                        </p>
+                    </div>
+                </div>
+                <div class="welfare">
+                    <span class="hook"><img width="20px;" height="20px;" src="./assets/svg/hook.svg"></span>
+                    <div style="display: inline-block;">
+                        <span class="title">期权等你！人人有份</span>
+                        <p class="describe">
+                            来福君，拿股权
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="welfare contact">
+                    <p class="title">联系我们</p>
+                    <p class="describe">
+                        简历投递：HR@fulgent.com.cn<br/>
+                        联系电话：0591-62753681（人力资源部）<br/>
+                        柳女士：15260905382  王女士：15810750721 <br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页尾 -->
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="./assets/img/fulgent_logo_02.png">
+        </div>
+        <el-row type="flex" :gutter="50">
+            <el-col :span="8">
+                <div class="footer-title">福君基因生物科技有限公司</div>
+                <div class="footer-item">
+                    <div class="widget">
+                        <div class="widget-content">上海 | 闵行区号文路 72 弄 5 号（七宝宝龙城 T7 栋）1003 室</div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-lable">电话：</div>
+                        <div class="widget-content">+86 (21) 61740807</div>
+                    </div>
+                </div>
+
+                <div class="footer-item">
+                    <div class="widget">
+                        <div class="widget-content">北京 | 经济技术开发区科创十三街 18 号院锋创科技园 6 号楼 10 层</div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-lable">电话：</div>
+                        <div class="widget-content">+86 (10) 67868434</div>
+                    </div>
+                </div>
+
+                <div class="footer-item">
+                    <div class="widget">
+                        <div class="widget-content">广州 | 黄埔区高新技术产业开发区新瑞路 6 号</div>
+                    </div>
+                    <!-- <div class="widget">
+                                        <div class="widget-lable">电话：</div>
+                                        <div class="widget-content">+86 (00) 00000000</div>
+                                    </div> -->
+                </div>
+                </el-col>
+
+            <el-col :span="7">
+                <div class="footer-title">福瑞医学检验实验室</div>
+                <div class="footer-item">
+                    <div class="widget">
+                        <div class="widget-content">福州 | 晋安区新店镇西庄路金城智谷工业园 9#4F</div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-content">
+                            <p>400-100-1907 (技术咨询)</p>
+                            <p>400-100-1937 (销售咨询)</p>
+                        </div>
+                    </div>
+                </div>
+            </el-col>
+
+            <el-col :span="4">
+                <div class="footer-title">关于</div>
+                <div class="footer-item">
+                    <a class="highlight" href="./about.html">关于福君</a>
+                    <a class="highlight" href="/index.html">福瑞医学</a>
+                    <a class="highlight" href="./html/clinical/index.html">临床检测</a>
+                    <a class="highlight" href="./html/research/index.html">科研服务</a>
+                    <a class="highlight" href="./joinus.html">加入我们</a>
+                </div>
+            </el-col>
+
+            <el-col :span="4">
+                <div class="footer-title">表单下载</div>
+                <div class="footer-item">
+                    <a class="highlight">分子检测申请单</a>
+                    <a class="highlight">携带者筛查基因检测送检单</a>
+                    <a class="highlight">肿瘤样本送检单</a>
+                    <a class="highlight">扩展性携带者筛查套餐</a>
+                    <a class="highlight">报告模板</a>
+                </div>
+            </el-col>
+
+            <el-col :span="4">
+                <div class="footer-title">资质</div>
+                <div class="footer-item">
+                    <p>医疗机构执业许可证</p>
+                </div>
+            </el-col>
+        </el-row>
+        <div class="copyright">
+            <div>Copyright © 2010-2020 上海福君基因生物科技有限公司</div>
+            <div>沪ICP备18012641号-1</div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

@@ -1,0 +1,166 @@
+.function{
+  padding: 60px 0;
+  width: 80%;
+  margin: auto;
+}
+.function>.el-row:last-child{
+  margin-bottom:0;
+}
+.function div{
+  height: 100%;
+}
+.function>.el-row{
+  margin-bottom: 80px;
+}
+.function>.el-row .el-col{
+  height: unset;
+}
+.function-item{
+  cursor: pointer;
+  margin: auto;
+  width: 170px;
+  font-size: 16px;
+  text-align: center;
+}
+.function-item>a{
+  display: table;
+  width: 100%;
+}
+.function-item .shadow:hover{
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  color: #DD4F05;
+}
+.function-item .shadow{
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.function-item .img{
+  margin: auto;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.function-item .describe{
+  color: #DD4F05;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.function-item:hover .weixin{
+  background-image: url(../img/116.jpg) !important;
+}
+
+.container-3{
+  padding: 0 0 60px 0;
+  background-color: #F2F2F2;
+  display: flex;
+}
+.container-3>div{
+  width: 100%;
+}
+.container-3 .background{
+  width: 100%;
+  height: 450px;
+  position: relative;
+  display: block;
+}
+.container-3 .item{
+  position: absolute;
+  left: 100px;
+  bottom: 30px;
+}
+.container-3 .name{
+  font-size: 40px;
+  color: #DD4F05;
+  font-weight: bold;
+}
+.container-3 .context{
+  margin: 25px 10% 0 100px;
+}
+.container-3 .context>.title{
+  color: #1896CD;
+  font-weight: bold;
+  font-size: 24px;
+}
+.container-3 .context>.describe,
+.container-4 .context>.describe{
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.container-4 .context>.describe>ul>li{
+    list-style: disc;
+    margin-left: 15px;
+}
+
+.container-4>.background,
+.container-5>.background{
+  height: 450px;
+  position: relative;
+  display: block;
+}
+.container-4>.background>.yidong{
+  position: absolute;
+  top: 60px;
+  left: 100px;
+}
+.container-4>.background .title{
+  font-size: 40px;
+  color: #DD4F05;
+  font-weight: bold;
+}
+.container-4>.context .title{
+  color: #DD4F05;
+  font-size: 24px;
+  font-weight: bold;
+}
+.container-4>.context{
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 70%;
+}
+.resume+.el-button{
+  margin-top: 10px;
+  border: unset;
+}
+.contact-us{
+  font-size: 24px;
+  color: #DD4F05;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.container-5{
+  position: relative;
+}
+.container-5 .text {
+  width: 50%;
+  position: absolute;
+  top: 120px;
+  left: 15%;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.container-5 .play{
+  position: absolute;
+  top: 250px;
+  left: 15%;
+  font-size: 24px;
+  color: #DD4F05;
+  cursor: pointer;
+}
+.container-5 .play>i{
+  font-size: 40px;
+  vertical-align: sub;
+  color: #DD4F05;
+}
+.container-5 .play:hover>i{
+  color: #DD4F05;
+}
+

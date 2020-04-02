@@ -1,0 +1,92 @@
+.about-banner{
+    height: 380px;
+}
+
+.container .title{
+    color: #dd4f05;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.describe{
+    font-size: 16px;
+}
+
+.content-1 .describe p{
+    padding-bottom: 40px;
+}
+
+.content-1 ul>li{
+    list-style: disc;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF6A24;
+}
+
+.content-1 ul>li>span{
+    color: #333;
+}
+.content-1 .img{
+    text-align: center;
+}
+.content-1 .img>img{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.content-2 ul{
+    width: 100%;
+    display: inline-flex;
+}
+
+.content-2 ul>li{
+    width: calc((100%)/4);
+}
+
+.content-2 ul>li>p{
+    padding-left: 15px;
+}
+
+.content-3 ul>li{
+    padding-bottom: 35px;
+}
+
+.subtitle{
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.business-title{
+    color: #dd4f05;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border-left: 1px solid #dd4f05;
+    font-size: 20px;
+}
+
+
+.content-3  {
+    margin:0 auto;
+    height: 441px;
+    background-image: url(../img/about_02.png);
+}
+
+.content-4 p{
+    padding-left: 20px;
+}
+
+.content-4 ul>li{
+    padding-bottom: 45px;
+}
+
+
+.content-5 ul>li{
+    padding-bottom: 45px;
+}
+
+
+.content-5 p{
+    padding-left: 20px;
+}
+

@@ -1,0 +1,58 @@
+.content .container .title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+
+}
+
+.describe{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.post{
+    /*border-left: 4px solid #DD4F05;*/
+}
+
+.post>.title{
+    color: #DD4F05;
+    font-size: 24px !important;
+}
+
+.post>.describe{
+    padding-bottom: 0px;
+}
+
+.content .container .work{
+    margin-bottom: 52px;
+}
+
+.content .container .work div{
+    margin-bottom: 35px;
+}
+
+.content-6 .title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.content-6 .contact .title{
+    font-size: 30px;
+    color: #DD4F05;
+    font-weight: bold;
+}
+.content-6 .container{
+    text-align: left;
+}
+
+.content-6 .contact{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.content-6 .hook{
+    position: relative;
+    top: -20px;
+    padding-right: 10px;
+}
