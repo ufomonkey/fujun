@@ -1,2 +1,2 @@
 # fulgent official website
-# link: www.fulgent.com.cn
+link: www.fulgent.com.cn
