@@ -1,0 +1,146 @@
+.about-banner {
+    height: 380px;
+  }
+  
+  .container .title {
+    text-align: center;
+    color: #fb753e;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+  
+  .describe {
+    font-size: 16px;
+  }
+  
+  .img2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .content-1 .describe p {
+    padding-bottom: 40px;
+  }
+  
+  
+  .content-1 ul > li > span {
+    color: #333;
+  }
+  .content-1 .img {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .content-1 .img > img {
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .content-1 .img > img {
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .content-2 ul {
+    width: 100%;
+    display: inline-flex;
+  }
+  
+  .img{
+      width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  .content-2 ul > li {
+    width: calc((100%) / 4);
+  }
+  
+  .content-2 ul > li > p {
+    padding-left: 15px;
+  }
+  
+  .content-3 ul > li {
+    padding-bottom: 35px;
+  }
+  
+  .feature-title {
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border-left: 3px solid #dd4f05;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .content-3 .img {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  .content-5 {
+    text-align: center;
+    padding: 0;
+  }
+  .content-5 .img {
+    text-align: center;
+    padding: 0;
+    max-width: 1000px;
+  }
+  
+  .titlesentieon{
+      text-align: center;
+    color: #35517c;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+  
+  .content-1 .container .imglogo{
+      max-width: 400px;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  
+  .stlist{
+      padding: 10% 20%;
+      color: #35517c;
+      font-size: 20px;
+      font-weight: 450;
+      line-height: 2.5;
+      list-style: circle;
+  }
+  
+  .hrdotted{
+      width: 70%;
+      border-color:#4d4d4d;
+      border-style: dotted;
+  }
+  
+  .titleleft{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .texthgmd{
+      text-align: center;
+      line-height: 2.0;
+      color: #e70100;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  {
+    line-height: 2.5;
+    list-style: disc;
+    list-style-position: inside;
+
+}
