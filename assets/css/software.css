@@ -145,4 +145,11 @@
   line-height: 2.5;
   list-style: disc;
   list-style-position: inside;
+  color: #568a37;
+}
+
+.hgmdtitleleft{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
