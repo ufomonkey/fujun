@@ -39,6 +39,7 @@
 .content-1 .img {
   text-align: center;
   vertical-align: middle;
+  margin: auto;
 }
 .content-1 .img > img {
   width: 100%;
@@ -56,9 +57,14 @@
 }
 
 .img{
-    width: 100%;
+  width: 100%;
   max-width: 1000px;
-  text-align: center;
+  margin: auto;
+}
+
+.imgleft{
+  width: 100%;
+  margin: auto;
 }
 
 .content-2 ul > li {
@@ -81,33 +87,35 @@
   font-weight: bold;
 }
 
-.content-3 .img {
-  width: 100%;
-  max-width: 1000px;
-  text-align: center;
 }
 .content-5 {
   text-align: center;
   padding: 0;
 }
+
+.content-5 .container{
+  text-align: center;
+  padding: 50px;
+}
+
 .content-5 .img {
   text-align: center;
   padding: 0;
   max-width: 1000px;
 }
 
-.titlesentieon{
-    text-align: center;
+.titlesoftware{
+  text-align: center;
   color: #35517c;
   font-weight: bold;
   font-size: 30px;
-  padding-bottom: 40px;
+  padding: 30px 0;
 }
 
 .content-1 .container .imglogo{
     max-width: 400px;
     margin-bottom: 20px;
-    text-align: center;
+    margin: auto;
 }
 
 .stlist{
@@ -126,7 +134,6 @@
 }
 
 .titleleft{
-  padding-left: 10%;
   margin-top: 30px;
   margin-bottom: 15px;
   color: #e6186b;
@@ -148,8 +155,8 @@
   color: #568a37;
 }
 
-.hgmdtitleleft{
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: bold;
+.center-vertical{
+  position: relative;
+  top:50%;
+  transform:translateY(100%);
 }

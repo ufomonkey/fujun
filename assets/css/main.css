@@ -19,12 +19,7 @@ p,ul{
 h1,h2,h3,h4,h5{
   margin: 0;
 }
-.el-row{
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
 .main{
-  /* margin: auto; */
   width: 100%;
   min-width: 1024px;
 }
@@ -134,13 +129,6 @@ h1,h2,h3,h4,h5{
   right: 23%;
 }
 
-.banner>.links{
-  font-size: 20px;
-  position: absolute;
-  top: 70%;
-  align-items: center;
-  margin: auto;
-}
 
 .banner>.centre{
   font-size: 40px;
@@ -154,8 +142,11 @@ h1,h2,h3,h4,h5{
   flex-direction: column;
 }
 
-.banner .links{
-  color: #FFF !important;
+.links{
+  font-size: 20px;
+  margin: 0;
+  text-shadow: none;
+  font-weight: normal;
 }
 
 .banner>.text>.el-button{
