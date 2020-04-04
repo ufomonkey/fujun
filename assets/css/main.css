@@ -227,9 +227,7 @@ h5 {
   margin-right: auto;
   width: 70%;
 }
-/* [class^=content-]>.title{
-  font-size: 32px;
-} */
+
 [class^="content-"] > .slogan {
   font-size: 40px;
   font-weight: lighter;
