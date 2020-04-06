@@ -1,250 +1,316 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>福君基因 - 遗传学眼病</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- elementui -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui@2.13.0/lib/theme-chalk/index.css"
+    />
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui@2.13.0/lib/index.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/miscarry.css"
+    />
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>福君基因 - 遗传学眼病</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- elementui -->
-  <link rel="stylesheet" href="https://unpkg.com/element-ui@2.13.0/lib/theme-chalk/index.css" />
-  <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
-  <script src="https://unpkg.com/element-ui@2.13.0/lib/index.js"></script>
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/miscarry.css" />
-  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-  <div id="app" class="main">
-    <!-- 头部 -->
-    <div class="container">
-      <el-row type="flex" class="header">
-        <el-col :span="6">
-          <a href="/index.html"><img class="web-logo" src="./assets/img/fulgent_logo_02.png" /></a>
-        </el-col>
-        <el-col :span="18">
-          <ul class="h-menu">
-            <li><a href="./index.html">首页</a></li>
-            <li><a href="./about.html">关于福君</a></li>
-            <li><a href="./html/clinical/carrier.html">福孕安™</a></li>
-            <li><a href="./index.html">临床检测</a></li>
-            <li><a href="./html/research/index.html">科研服务</a></li>
-                    <li><a href="./software.html">遗传分析平台</a></li>
-            <li><a href="./about.html#anchor">联系我们</a></li>
-            <li><a href="./joinus.html">加入我们</a></li>
-          </ul>
-        </el-col>
-      </el-row>
-    </div>
-    <!-- 内容 -->
-    <div class="content">
-      <div class="banner background" style="background-image: url(./assets/img/109.jpg);">
-        <div class="centre">
-          <p>遗传性眼病基因检测</p>
-        </div>
-      </div>
-
-      <div class="content-x">
-        <h3 class="title left">遗传性眼病介绍</h3>
-        <div class="container">
-          <div class="describe">
-            <div class="text-1">
-              <p>遗传性眼病是由于遗传物质改变导致的眼部疾病，且部分眼病不易在早期发现，是当前影响视觉系统的重要疾病。我国发病率高、人数多，仅单基因眼病患者就占总人口的4%</p>
-              <p>遗传性眼病有600余种，对眼的结构和功能危害严重，且多为双眼发病，大多数随着病情发展，视力逐渐遭到破坏，最终导致失明。我国近几年的调查结果表明，遗传性眼病约占儿童盲目和视力损伤的1/3，占盲目和严重视力损伤的80%，严重危害人类健康。</p>
-            </div>
-            <hr />
-            <ul class="ul-style-2">
-              <li>
-                <span class="lable">个性化解决方案:</span>
-                <span>根据患者不同情况，推荐个性化检测方案，更好的节约时间成本</span>
-              </li>
-              <li>
-                <span class="lable">更准确的检测技术:</span>
-                <span>优化设计加密探针，提高捕获效率，获得更多的基因变异信息。</span>
-              </li>
-              <li>
-                <span class="lable">更全面的检测类型:</span>
-                <span>首创 CNVexon分析，外显子测序可同时完成S和单外显子水平CNV的检测及验证，有效提高检测率。</span>
-              </li>
-              <li>
-                <span class="lable">更专业的遗传分析和解读:</span>
-                <span>自主研发人工智能变异排序分级流程，精准分级变异。整合丰富公共数据库与商业软件，专业团队精确筛选遗传致病变异。</span>
-              </li>
-              <li>
-                <span class="lable">一流的临床专家团队:</span>
-                <span>携手国际国内多位权威专家，检测结果进行精准解读并提供有效防治方案。</span>
-              </li>
-              <li>
-                <span class="lable">更贴心的遗传咨询服务:</span>
-                <span>医学/遗传学专业人员提供一对一遗传咨询服务。</span>
-              </li>
+  <body>
+    <div id="app" class="main">
+      <!-- 头部 -->
+      <div class="container">
+        <el-row type="flex" class="header">
+          <el-col :span="6">
+            <a href="/index.html"
+              ><img class="web-logo" src="./assets/img/fulgent_logo_02.png"
+            /></a>
+          </el-col>
+          <el-col :span="18">
+            <ul class="h-menu">
+              <li><a href="./index.html">首页</a></li>
+              <li><a href="./about.html">关于福君</a></li>
+              <li><a href="./html/clinical/carrier.html">福孕安™</a></li>
+              <li><a href="./index.html">临床检测</a></li>
+              <li><a href="./html/research/index.html">科研服务</a></li>
+              <li><a href="./software.html">遗传分析平台</a></li>
+              <li><a href="./about.html#anchor">联系我们</a></li>
+              <li><a href="./joinus.html">加入我们</a></li>
             </ul>
+          </el-col>
+        </el-row>
+      </div>
+      <!-- 内容 -->
+      <div class="content">
+        <div
+          class="banner background"
+          style="background-image: url(./assets/img/109.jpg);"
+        >
+          <div class="centre">
+            <p>遗传性眼病基因检测</p>
+          </div>
+        </div>
+
+        <div class="content-x">
+          <h3 class="title left">遗传性眼病介绍</h3>
+          <div class="container">
+            <div class="describe">
+              <div class="text-1">
+                <p>
+                  遗传性眼病是由于遗传物质改变导致的眼部疾病，且部分眼病不易在早期发现，是当前影响视觉系统的重要疾病。我国发病率高、人数多，仅单基因眼病患者就占总人口的4%
+                </p>
+                <p>
+                  遗传性眼病有600余种，对眼的结构和功能危害严重，且多为双眼发病，大多数随着病情发展，视力逐渐遭到破坏，最终导致失明。我国近几年的调查结果表明，遗传性眼病约占儿童盲目和视力损伤的1/3，占盲目和严重视力损伤的80%，严重危害人类健康。
+                </p>
+              </div>
+              <hr />
+              <ul class="ul-style-2">
+                <li>
+                  <span class="lable">个性化解决方案:</span>
+                  <span
+                    >根据患者不同情况，推荐个性化检测方案，更好的节约时间成本</span
+                  >
+                </li>
+                <li>
+                  <span class="lable">更准确的检测技术:</span>
+                  <span
+                    >优化设计加密探针，提高捕获效率，获得更多的基因变异信息。</span
+                  >
+                </li>
+                <li>
+                  <span class="lable">更全面的检测类型:</span>
+                  <span
+                    >首创
+                    CNVexon分析，外显子测序可同时完成S和单外显子水平CNV的检测及验证，有效提高检测率。</span
+                  >
+                </li>
+                <li>
+                  <span class="lable">更专业的遗传分析和解读:</span>
+                  <span
+                    >自主研发人工智能变异排序分级流程，精准分级变异。整合丰富公共数据库与商业软件，专业团队精确筛选遗传致病变异。</span
+                  >
+                </li>
+                <li>
+                  <span class="lable">一流的临床专家团队:</span>
+                  <span
+                    >携手国际国内多位权威专家，检测结果进行精准解读并提供有效防治方案。</span
+                  >
+                </li>
+                <li>
+                  <span class="lable">更贴心的遗传咨询服务:</span>
+                  <span>医学/遗传学专业人员提供一对一遗传咨询服务。</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-x" style="background-color: #FAFAFC;">
+          <h3 class="title left">疾病特点</h3>
+          <div class="container">
+            <img src="./assets/svg/110.svg" />
+          </div>
+        </div>
+
+        <div class="content-x">
+          <h3 class="title left">疾病分类</h3>
+          <div class="container">
+            <div class="describe">
+              <div class="text-1">
+                <p>
+                  目前已知的遗传性疾病超过8000种，其中遗传性眼病就有600余种，包括单纯性遗传性眼病200余种，全身或其他系统遗传病在眼部有表现的400多种，大多数遗传性眼病属于单基因病或多基因病遗传性眼病，少数为线粒体病和染色体病、体细胞遗传病。
+                </p>
+              </div>
+              <hr />
+              <ul class="ul-style-3">
+                <li>
+                  <h4 class="lable">单基因遗传性眼病:</h4>
+                  <p class="text">
+                    单基因遗传性眼病是一类具有高度遗传和临床异质性的致盲眼病，主要包括角膜营养不良、眼前节发育异常、视网膜色素变性、眼球震颤等疾病单基因遗传性眼病大多遵循孟德尔遗传规律，呈特征性的家系传递格局。
+                  </p>
+                </li>
+                <li>
+                  <h4 class="lable">多基因遗传性眼病:</h4>
+                  <p class="text">
+                    与单基因遗传病相比，多基因遗传病由遗传和环境因素共同起作用。这种遗传性眼病多为常见病，如近视、青光眼、年龄相关性黄斑变性等，受累人数约20%左右。
+                  </p>
+                </li>
+                <li>
+                  <h4 class="lable">线粒体病:</h4>
+                  <p class="text">
+                    线粒体病是由线粒体基因组发生突变所导致的一类疾病，该病的遗传方式不完全符合孟德尔遗传定律，随同线粒体传递，呈细胞质遗传，如
+                    Leber氏遗传性视神经病变。
+                  </p>
+                </li>
+                <li>
+                  <h4 class="lable">染色体病:</h4>
+                  <p class="text">
+                    是因染色体数目或结构异常所致的遗传病，一般出生后即可发现一些严重的器官结构异常，如Down综合征伴眼部外形改变，也常常伴有精神和智力障碍。
+                  </p>
+                </li>
+                <li>
+                  <h4 class="lable">体细胞遗传病:</h4>
+                  <p class="text">
+                    体细胞遗传病是指除性细胞外的体细胞发生突变引起的疾病，这样的突变不会传给后代，多数肿瘤可看成是一种体细胞遗传病。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-x" style="background-color: #FAFAFC;">
+          <h3 class="title left" style="margin-bottom: 30px;">
+            遗传性眼病目录
+          </h3>
+          <div class="container">
+            <p>
+              福君基因视力系统检测Panel运用多种分子诊断技术对目前已知的与眼科遗传病相关的1651个基因进行检测，涵盖眼底疾病、视神经疾病、晶状体疾病、角膜疾病等多种遗传性眼病，为临床诊断、治疗方案选择、预后判断、优生优育提供科学依据。
+            </p>
+          </div>
+          <div style="text-align: center; margin-top: 40px;">
+            <el-button round class="el-button-DD4F05">
+              <img
+                src="./assets/svg/down.svg"
+                style="width: 18px; vertical-align: sub;"
+              />
+              下载完整版福君基因遗传性眼病目录
+            </el-button>
+          </div>
+        </div>
+
+        <div class="content-x">
+          <h3 class="title left">遗传性眼病基因检测的意义</h3>
+          <div class="container">
+            <img class="img-info" src="./assets/svg/111.svg" />
+          </div>
+        </div>
+
+        <div class="content-x" style="background-color: #FAFAFC;">
+          <h3 class="title">送检流程</h3>
+          <div class="container">
+            <img class="img-info" src="./assets/svg/112.svg" />
           </div>
         </div>
       </div>
-
-      <div class="content-x" style="background-color: #FAFAFC;">
-        <h3 class="title left">疾病特点</h3>
-        <div class="container">
-          <img src="./assets/svg/110.svg" />
+      <!-- 页尾 -->
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="./assets/img/fulgent_logo_02.png" />
         </div>
-      </div>
-
-      <div class="content-x">
-        <h3 class="title left">疾病分类</h3>
-        <div class="container">
-          <div class="describe">
-            <div class="text-1">
-              <p>目前已知的遗传性疾病超过8000种，其中遗传性眼病就有600余种，包括单纯性遗传性眼病200余种，全身或其他系统遗传病在眼部有表现的400多种，大多数遗传性眼病属于单基因病或多基因病遗传性眼病，少数为线粒体病和染色体病、体细胞遗传病。</p>
-            </div>
-            <hr />
-            <ul class="ul-style-3">
-              <li>
-                <h4 class="lable">单基因遗传性眼病:</h4>
-                <p class="text">单基因遗传性眼病是一类具有高度遗传和临床异质性的致盲眼病，主要包括角膜营养不良、眼前节发育异常、视网膜色素变性、眼球震颤等疾病单基因遗传性眼病大多遵循孟德尔遗传规律，呈特征性的家系传递格局。</p>
-              </li>
-              <li>
-                <h4 class="lable">多基因遗传性眼病:</h4>
-                <p class="text">与单基因遗传病相比，多基因遗传病由遗传和环境因素共同起作用。这种遗传性眼病多为常见病，如近视、青光眼、年龄相关性黄斑变性等，受累人数约20%左右。</p>
-              </li>
-              <li>
-                <h4 class="lable">线粒体病:</h4>
-                <p class="text">线粒体病是由线粒体基因组发生突变所导致的一类疾病，该病的遗传方式不完全符合孟德尔遗传定律，随同线粒体传递，呈细胞质遗传，如 Leber氏遗传性视神经病变。</p>
-              </li>
-              <li>
-                <h4 class="lable">染色体病:</h4>
-                <p class="text">是因染色体数目或结构异常所致的遗传病，一般出生后即可发现一些严重的器官结构异常，如Down综合征伴眼部外形改变，也常常伴有精神和智力障碍。</p>
-              </li>
-              <li>
-                <h4 class="lable">体细胞遗传病:</h4>
-                <p class="text">体细胞遗传病是指除性细胞外的体细胞发生突变引起的疾病，这样的突变不会传给后代，多数肿瘤可看成是一种体细胞遗传病。</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="content-x" style="background-color: #FAFAFC;">
-        <h3 class="title left" style="margin-bottom: 30px;">遗传性眼病目录</h3>
-        <div class="container">
-          <p>福君基因视力系统检测Panel运用多种分子诊断技术对目前已知的与眼科遗传病相关的1651个基因进行检测，涵盖眼底疾病、视神经疾病、晶状体疾病、角膜疾病等多种遗传性眼病，为临床诊断、治疗方案选择、预后判断、优生优育提供科学依据。</p>
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-          <el-button round class="el-button-DD4F05">
-            <img src="./assets/svg/down.svg" style="width: 18px; vertical-align: sub;"/>
-            下载完整版福君基因遗传性眼病目录
-          </el-button>
-        </div>
-      </div>
-
-      <div class="content-x">
-        <h3 class="title left">遗传性眼病基因检测的意义</h3>
-        <div class="container">
-          <img class="img-info" src="./assets/svg/111.svg" />
-        </div>
-      </div>
-
-      <div class="content-x" style="background-color: #FAFAFC;">
-        <h3 class="title">送检流程</h3>
-        <div class="container">
-          <img class="img-info" src="./assets/svg/112.svg" />
-        </div>
-      </div>
-
-    </div>
-    <!-- 页尾 -->
-    <div class="footer">
-      <div class="footer-logo">
-        <img src="./assets/img/fulgent_logo_02.png">
-      </div>
-      <el-row type="flex" :gutter="50">
-        <el-col :span="6">
-          <div class="footer-title">福君基因生物科技有限公司</div>
-          <div class="footer-item">
-            <div class="widget">
-              <div class="widget-content">上海 | 闵行区号文路 72 弄 5 号（七宝宝龙城 T7 栋）1003 室</div>
-            </div>
-            <div class="widget">
-              <div class="widget-lable">电话：</div>
-              <div class="widget-content">+86 (21) 61740807</div>
-            </div>
-          </div>
-
-          <div class="footer-item">
-            <div class="widget">
-              <div class="widget-content">北京 | 经济技术开发区科创十三街 18 号院锋创科技园 6 号楼 10 层</div>
-            </div>
-            <div class="widget">
-              <div class="widget-lable">电话：</div>
-              <div class="widget-content">+86 (10) 67868434</div>
-            </div>
-          </div>
-
-          <div class="footer-item">
-            <div class="widget">
-              <div class="widget-content">广州 | 黄埔区高新技术产业开发区新瑞路 6 号</div>
-            </div>
-            <!-- <!-- <div class="widget">
-              <div class="widget-lable">电话：</div>
-              <div class="widget-content">+86 (00) 00000000</div>
-            </div> --> -->
-          </div>
-        </el-col>
-
-        <el-col :span="7">
-          <div class="footer-title">福瑞医学检验实验室</div>
-          <div class="footer-item">
-            <div class="widget">
-              <div class="widget-content">福州 | 晋安区新店镇西庄路金城智谷工业园 9#4F</div>
-            </div>
-            <div class="widget">
-              <div class="widget-content">
-                <p>400-100-1907 (技术咨询)</p>
-                <p>400-100-1937 (销售咨询)</p>
+        <el-row type="flex" :gutter="50">
+          <el-col :span="6">
+            <div class="footer-title">福君基因生物科技有限公司</div>
+            <div class="footer-item">
+              <div class="widget">
+                <div class="widget-content">
+                  上海 | 闵行区号文路 72 弄 5 号（七宝宝龙城 T7 栋）1003 室
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget-lable">电话：</div>
+                <div class="widget-content">+86 (21) 61740807</div>
               </div>
             </div>
-          </div>
-        </el-col>
 
-        <el-col :span="4">
-          <div class="footer-title">关于</div>
-          <div class="footer-item">
-            <a class="highlight" href="./about.html">关于福君</a>
-            <a class="highlight" href="/">福瑞医学</a>
-            <a class="highlight" href="./html/clinical/index.html">临床检测</a>
-            <a class="highlight" href="./html/research/index.html">科研服务</a>
-            <a class="highlight" href="./joinus.html">加入我们</a>
-          </div>
-        </el-col>
+            <div class="footer-item">
+              <div class="widget">
+                <div class="widget-content">
+                  北京 | 经济技术开发区科创十三街 18 号院锋创科技园 6 号楼 10 层
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget-lable">电话：</div>
+                <div class="widget-content">+86 (10) 67868434</div>
+              </div>
+            </div>
 
-        <el-col :span="4">
-          <div class="footer-title">表单下载</div>
-          <div class="footer-item">
-            <a class="highlight">分子检测申请单</a>
-            <a class="highlight">携带者筛查基因检测送检单</a>
-            <a class="highlight">肿瘤样本送检单</a>
-            <a class="highlight">扩展性携带者筛查套餐</a>
-            <a class="highlight">报告模板</a>
-          </div>
-        </el-col>
+            <div class="footer-item">
+              <div class="widget">
+                <div class="widget-content">
+                  广州 | 黄埔区高新技术产业开发区新瑞路 6 号
+                </div>
+              </div>
+              <!-- <!-- <div class="widget">
+              <div class="widget-lable">电话：</div>
+              <div class="widget-content">+86 (00) 00000000</div>
+            </div> -->
+              -->
+            </div>
+          </el-col>
 
-        <el-col :span="4">
-          <div class="footer-title">资质</div>
-          <div class="footer-item">
-            <p>医疗机构执业许可证</p>
-          </div>
-        </el-col>
-      </el-row>
-      <div class="copyright">
-        <div>Copyright © 2010-2020 上海福君基因生物科技有限公司</div>
-        <div>沪ICP备18012641号-1</div>
+          <el-col :span="7">
+            <div class="footer-title">福瑞医学检验实验室</div>
+            <div class="footer-item">
+              <div class="widget">
+                <div class="widget-content">
+                  福州 | 晋安区新店镇西庄路金城智谷工业园 9#4F
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget-content">
+                  <p>400-100-1907 (技术咨询)</p>
+                  <p>400-100-1937 (销售咨询)</p>
+                </div>
+              </div>
+            </div>
+          </el-col>
+
+          <el-col :span="4">
+            <div class="footer-title">关于</div>
+            <div class="footer-item">
+              <a class="highlight" href="./about.html">关于福君</a>
+              <a class="highlight" href="/">福瑞医学</a>
+              <a class="highlight" href="./html/clinical/index.html"
+                >临床检测</a
+              >
+              <a class="highlight" href="./html/research/index.html"
+                >科研服务</a
+              >
+              <a class="highlight" href="./joinus.html">加入我们</a>
+            </div>
+          </el-col>
+
+          <el-col :span="4">
+            <div class="footer-title">表单下载</div>
+            <div class="footer-item">
+              <a class="highlight">分子检测申请单</a>
+              <a class="highlight">携带者筛查基因检测送检单</a>
+              <a class="highlight">肿瘤样本送检单</a>
+              <a class="highlight">扩展性携带者筛查套餐</a>
+              <a class="highlight">报告模板</a>
+            </div>
+          </el-col>
+
+          <el-col :span="4">
+            <div class="footer-title">资质</div>
+            <div class="footer-item">
+              <p>医疗机构执业许可证</p>
+            </div>
+          </el-col>
+        </el-row>
+        <div class="copyright">
+          <div>Copyright © 2010-2020 上海福君基因生物科技有限公司</div>
+          <div>沪ICP备18012641号-1</div>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-<script src="./js/main.js"></script>
-
+  </body>
+  <script src="./js/main.js"></script>
 </html>
